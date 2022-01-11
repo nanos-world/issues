@@ -1,27 +1,73 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: 🐛 Bug Report
+description: Submit a bug report to help us improve
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Please help us help you!
 
----
+        Make it obvious to understand and reproduce this bug. Ideally, we should be able to understand it without running any code.
 
-## Describe the bug
-A clear and concise description of what the bug is.
+        Bugs are fixed faster if you include:
+        - A small snippet to reproduce the problem.
+        - A video/screenshot of what's happening.
 
-## To Reproduce
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Please check the following items before creating a issue. This way we know you've done these steps first.
+      options:
+        - label: I'm sure both client and server are on the latest update.
+          required: true
+        - label: I have read the console error message carefully (if applicable).
 
-## Expected behavior
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    attributes:
+      label: Your Environment
+      description: Include as many relevant details about the environment you experienced the bug in.
+      value: |
+        - Version (e.g. stable 1.2.0, bleeding-edge 1.3.0):
+        - Operating system and version (e.g. Ubuntu 20.04.2 LTS, Windows 10):
 
-## Screenshots
-If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
 
-## Additional context
-Add any other context about the problem here.
+  - type: textarea
+    attributes:
+      label: Steps to reproduce the behavior
+      description: How to reproduce the bug?
+      placeholder: |
+        Write your steps here.
+
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: |
+        How did you expect your project to behave? It’s fine if you’re not sure your understanding is correct. Write down what you thought would happen.
+      placeholder: Write what you thought would happen.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: |
+        Did something go wrong? Is something broken, or not behaving as you expected?
+        Describe this section in detail, and attach screenshots if possible. Don't only say "it doesn't work"!
+        Please submit exhaustive and complete log messages (we also need the error stack-traces, not just the message).
+        > Please read error messages carefully: it often tells you exactly what you are doing wrong.
+      placeholder: Write what happened. Add full console log messages and screenshots, if applicable.
+    validations:
+      required: true
