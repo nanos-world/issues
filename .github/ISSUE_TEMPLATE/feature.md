@@ -1,0 +1,30 @@
+name: 💅 Feature Request
+description: Submit a Feature Request, new API idea or game-play changes.
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: A clear and concise description of what your feature request is about.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: API Design
+      description: |
+        Please describe, if applicable, how this feature could be exposed in the Scripting API.
+      placeholder: |
+        Example: Character:SetHealth(new_health)
+
+  - type: textarea
+    attributes:
+      label: Motivation
+      description: Please outline the motivation for the proposal and why it should be implemented. Has this been requested by a lot of users?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives
+      description: Please describe alternatives you've considered to achieve this result using the existing methods.
