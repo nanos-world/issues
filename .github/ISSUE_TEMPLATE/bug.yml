@@ -21,6 +21,7 @@ body:
         - label: I'm sure both client and server are on the latest update.
           required: true
         - label: I have read the console error message carefully (if applicable).
+          required: true
 
   - type: textarea
     attributes:
