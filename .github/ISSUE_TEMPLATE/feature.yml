@@ -5,7 +5,7 @@ body:
   - type: textarea
     attributes:
       label: Description
-      description: A clear and concise description of what your feature request is about.
+      description: A clear and concise description of what your feature request is about. Please don't ask for too many things in a single issue, the chance they won't get done is higher as it's harder to maintain the track of them. Split it into several issues if needed.
     validations:
       required: true
 
