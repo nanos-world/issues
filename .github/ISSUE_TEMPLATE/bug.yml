@@ -28,8 +28,8 @@ body:
       label: Your Environment
       description: Include as many relevant details about the environment you experienced the bug in.
       value: |
-        - Version (e.g. stable 1.2.0, bleeding-edge 1.3.0):
-        - Operating system and version (e.g. Ubuntu 20.04.2 LTS, Windows 10):
+        - Version: e.g. stable 1.2.0, bleeding-edge 1.3.0
+        - Operating System and Version: e.g. Ubuntu 20.04.2 LTS, Windows 10
 
   - type: textarea
     attributes:
