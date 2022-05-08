@@ -1,5 +1,9 @@
 blank_issues_enabled: false
 contact_links:
+  - name: 💅 Feature Request - Ideas
+    url: https://feedback.nanos.world/
+    about: Use our new platform to collect feedback and ideas, vote for the best and suggest new ones!
+
   - name: ❓ Simple question - Discord Chat
     url: https://discord.nanos.world/
     about: Feel free to reach us to debate on Discord!
