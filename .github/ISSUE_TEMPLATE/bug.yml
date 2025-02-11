@@ -33,8 +33,19 @@ body:
 
   - type: textarea
     attributes:
+      label: Regression
+      description: Is it a regression? Did it work before and stopped working since an update?
+      placeholder: |
+        Write if it worked before and stopped working.
+        
+        e.g.: It used to work in version 1.2.3 but stopped working in 1.2.4
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
       label: Description
-      description: A clear and concise description of what the bug is. Please make sure to tell if this is a regression (it worked before but stopped working since an update).
+      description: A clear and concise description of what the bug is.
     validations:
       required: true
 
@@ -56,7 +67,7 @@ body:
     attributes:
       label: Expected behavior
       description: |
-        How did you expect your project to behave? It’s fine if you’re not sure your understanding is correct. Write down what you thought would happen.
+        How did you expect the problem to behave? It's fine if you’re not sure your understanding is correct. Write down what you thought would happen.
       placeholder: Write what you thought would happen.
     validations:
       required: true
